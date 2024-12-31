@@ -1,26 +1,119 @@
-.border {
-    border: solid black 2px;
-    padding: 10px;
+
+/* Global styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fafafa;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.serche {
-    margin-left: 25%;
-    width: 50%;
-    height: 50px;
-    margin-bottom: 30px;
-    border: solid 2px rgb(0, 0, 0);
-    font-size: x-large;
+h1 {
     text-align: center;
-
+    margin: 40px 0;
+    color: #333;
+    font-size: 36px;
 }
 
-.thead {
-    background-color: rgb(219, 239, 255);
-    border: solid black 2px;
-    padding: 15px;
-    font-size: x-large;
+/* Table styles */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: white;
 }
 
-.icon {
-     padding-left: 25%; 
+th, td {
+    width: 4%;
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    border: solid 1px rgb(204, 202, 202);
+}
+.material-icons{
+    padding-left: 10px;
+}
+
+th {
+    background-color: #50b2eb;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+tr:nth-child(even) {
+    background-color: #f7f7f7;
+}
+
+tr:hover {
+    background-color: #ececec;
+}
+
+td img {
+    width: 100px; /* Increase the size of the image */
+    height: 100px;
+    border-radius: 50%; /* Rounded image */
+    border: 3px solid #ddd;
+    padding: 3px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Softer shadow for clarity */
+    object-fit: cover; /* Ensures the image doesn't get stretched */
+}
+
+td img.fallback {
+    object-fit: contain; /* Maintain aspect ratio if image is missing */
+    background-color: #f0f0f0; /* Light gray background for the placeholder */
+}
+
+/* Modern input and select styles */
+.controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+input[type="search"], select {
+    padding: 12px 16px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    outline: none;
+    width: 80%;
+    max-width: 350px;
+    margin-bottom: 15px;
+}
+
+input[type="search"]:focus, select:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.6);
+}
+
+input[type="search"]::placeholder {
+    color: #aaa;
+}
+
+select {
+    width: auto;
+    font-weight: bold;
+}
+th:hover{
+    box-shadow:  2px 2px 100px #3479a1 inset;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    table {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .controls input[type="search"], .controls select {
+        width: 90%;
+        margin-bottom: 10px;
+    }
 }
