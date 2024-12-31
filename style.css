@@ -1,0 +1,26 @@
+.border {
+    border: solid black 2px;
+    padding: 10px;
+}
+
+.serche {
+    margin-left: 25%;
+    width: 50%;
+    height: 50px;
+    margin-bottom: 30px;
+    border: solid 2px rgb(0, 0, 0);
+    font-size: x-large;
+    text-align: center;
+
+}
+
+.thead {
+    background-color: rgb(219, 239, 255);
+    border: solid black 2px;
+    padding: 15px;
+    font-size: x-large;
+}
+
+.icon {
+     padding-left: 25%; 
+}
